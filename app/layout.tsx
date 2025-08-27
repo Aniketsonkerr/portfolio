@@ -19,7 +19,7 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Alex Johnson - Full Stack Developer | AI Integration Specialist",
+  title: "Aniket sonker - Full Stack Developer | AI Integration Specialist",
   description:
     "Experienced Full Stack Developer specializing in Python, JavaScript, and AI integration. Building innovative web solutions with modern technologies.",
   generator: "v0.app",

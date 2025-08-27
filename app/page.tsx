@@ -109,7 +109,7 @@ export default function DeveloperPortfolio() {
               problems.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
+              <Button size="lg" variant="secondary" className="text-lg px-8 py-4" onClick={() => window.open("https://github.com/Aniketsonkerr", "_blank")}>
                 <Github className="h-5 w-5 mr-2" />
                 View My Work
               </Button>
@@ -126,11 +126,11 @@ export default function DeveloperPortfolio() {
             <div className="flex justify-center space-x-6 text-primary-foreground/80">
               <div className="flex items-center">
                 <Code className="h-5 w-5 mr-2" />
-                <span>5+ Years Experience</span>
+                <span>1+ Years Experience</span>
               </div>
               <div className="flex items-center">
                 <Database className="h-5 w-5 mr-2" />
-                <span>50+ Projects Completed</span>
+                <span>10+ Projects Completed</span>
               </div>
               <div className="flex items-center">
                 <Brain className="h-5 w-5 mr-2" />
@@ -169,15 +169,15 @@ export default function DeveloperPortfolio() {
                   AI-powered functionalities.
                 </p>
                 <div className="flex space-x-4">
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="sm" onClick={() => window.open("https://github.com/Aniketsonkerr", "_blank")}>
                     <Github className="h-4 w-4 mr-2" />
                     GitHub
                   </Button>
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="sm" onClick={() => window.open("https://www.linkedin.com/in/aniket-sonker-a6a654273/", "_blank")}>
                     <Linkedin className="h-4 w-4 mr-2" />
                     LinkedIn
                   </Button>
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="sm" onClick={()=>window.open("mailto:aniketsonkerr@gmail.com")}>
                     <Mail className="h-4 w-4 mr-2" />
                     Email
                   </Button>
@@ -240,7 +240,7 @@ export default function DeveloperPortfolio() {
                     <ExternalLink className="h-4 w-4 mr-2" />
                     View Demo
                   </Button>
-                  <Button size="sm" variant="ghost">
+                  <Button size="sm" variant="ghost" onClick={() => window.open("https://github.com/Aniketsonkerr/youtubeClone", "_blank")}>
                     <Github className="h-4 w-4 mr-2" />
                     Code
                   </Button>
@@ -581,429 +581,102 @@ export default function DeveloperPortfolio() {
 
       {/* Detailed Skills Section */}
       <section id="skills" className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading font-black mb-4">Technical Skills</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive expertise across modern web technologies and AI integration
-            </p>
-          </div>
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-heading font-extrabold mb-4">Technical Skills</h2>
+      <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        Comprehensive expertise across modern web technologies and AI integration
+      </p>
+    </div>
 
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-8 mb-12">
-              {/* Programming Languages */}
-              {/* Skills Section */}
-              <section id="skills" className="py-20 bg-muted/30">
-                <div className="container mx-auto px-4">
-                  <div className="text-center mb-16">
-                    <h2 className="text-4xl font-heading font-black mb-4">Technical Skills</h2>
-                    <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                      My expertise spans across modern web technologies and AI integration
-                    </p>
-                  </div>
-
-                  <div className="max-w-6xl mx-auto">
-                    {/* Programming Languages */}
-                    <div className="mb-12">
-                      <h3 className="text-2xl font-heading font-bold mb-8 text-center">
-                        Programming Languages & Core Technologies
-                      </h3>
-                      <div className="grid md:grid-cols-2 gap-6">
-                        <div className="space-y-4">
-                          <div>
-                            <div className="flex justify-between items-center mb-2">
-                              <span className="font-medium">JavaScript</span>
-                              <span className="text-sm text-muted-foreground">Advanced</span>
-                            </div>
-                            <div className="w-full bg-muted rounded-full h-2">
-                              <div className="bg-primary h-2 rounded-full" style={{ width: "90%" }}></div>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="flex justify-between items-center mb-2">
-                              <span className="font-medium">React.js</span>
-                              <span className="text-sm text-muted-foreground">Advanced</span>
-                            </div>
-                            <div className="w-full bg-muted rounded-full h-2">
-                              <div className="bg-primary h-2 rounded-full" style={{ width: "85%" }}></div>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="flex justify-between items-center mb-2">
-                              <span className="font-medium">Node.js</span>
-                              <span className="text-sm text-muted-foreground">Advanced</span>
-                            </div>
-                            <div className="w-full bg-muted rounded-full h-2">
-                              <div className="bg-accent h-2 rounded-full" style={{ width: "80%" }}></div>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="flex justify-between items-center mb-2">
-                              <span className="font-medium">Python</span>
-                              <span className="text-sm text-muted-foreground">Intermediate</span>
-                            </div>
-                            <div className="w-full bg-muted rounded-full h-2">
-                              <div className="bg-secondary h-2 rounded-full" style={{ width: "75%" }}></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="space-y-4">
-                          <div>
-                            <div className="flex justify-between items-center mb-2">
-                              <span className="font-medium">C++</span>
-
-                              <span className="text-sm text-muted-foreground">Advanced</span>
-                            </div>
-                            <div className="w-full bg-muted rounded-full h-2">
-                              <div className="bg-primary h-2 rounded-full" style={{ width: "85%" }}></div>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="flex justify-between items-center mb-2">
-                              <span className="font-medium">Java</span>
-                              <span className="text-sm text-muted-foreground">Intermediate</span>
-                            </div>
-                            <div className="w-full bg-muted rounded-full h-2">
-                              <div className="bg-accent h-2 rounded-full" style={{ width: "70%" }}></div>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="flex justify-between items-center mb-2">
-                              <span className="font-medium">TypeScript</span>
-                              <span className="text-sm text-muted-foreground">Intermediate</span>
-                            </div>
-                            <div className="w-full bg-muted rounded-full h-2">
-                              <div className="bg-secondary h-2 rounded-full" style={{ width: "75%" }}></div>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="flex justify-between items-center mb-2">
-                              <span className="font-medium">PHP</span>
-                              <span className="text-sm text-muted-foreground">Intermediate</span>
-                            </div>
-                            <div className="w-full bg-muted rounded-full h-2">
-                              <div className="bg-primary h-2 rounded-full" style={{ width: "65%" }}></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Technical Skills Grid */}
-                    <div className="grid md:grid-cols-3 gap-8">
-                      <Card className="bg-card/50 backdrop-blur border-0">
-                        <CardContent className="p-6">
-                          <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                            <Code className="h-6 w-6 text-primary" />
-                          </div>
-                          <h3 className="text-lg font-heading font-bold mb-4">Frontend Technologies</h3>
-                          <div className="space-y-2">
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              HTML5
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              CSS3
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              Bootstrap
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              Next.js
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              AngularJS
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              UI/UX Design
-                            </Badge>
-                          </div>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="bg-card/50 backdrop-blur border-0">
-                        <CardContent className="p-6">
-                          <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                            <Database className="h-6 w-6 text-accent" />
-                          </div>
-                          <h3 className="text-lg font-heading font-bold mb-4">Backend & Database</h3>
-                          <div className="space-y-2">
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              Express.js
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              MongoDB
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              MySQL
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              PostgreSQL
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              REST API
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              APIs
-                            </Badge>
-                          </div>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="bg-card/50 backdrop-blur border-0">
-                        <CardContent className="p-6">
-                          <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
-                            <Cloud className="h-6 w-6 text-secondary" />
-                          </div>
-                          <h3 className="text-lg font-heading font-bold mb-4">DevOps & Cloud</h3>
-                          <div className="space-y-2">
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              Git
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              GitHub
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              Docker
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              AWS EC2
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              Linux
-                            </Badge>
-                            <Badge variant="secondary" className="mr-2 mb-2">
-                              WordPress
-                            </Badge>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    </div>
-
-                    {/* AI & Specialized Skills */}
-                    <div className="mt-12">
-                      <h3 className="text-2xl font-heading font-bold mb-8 text-center">AI & Specialized Skills</h3>
-                      <div className="grid md:grid-cols-2 gap-8">
-                        <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-0">
-                          <CardContent className="p-6">
-                            <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                              <Brain className="h-6 w-6 text-primary" />
-                            </div>
-                            <h3 className="text-lg font-heading font-bold mb-4">AI & Machine Learning</h3>
-                            <div className="space-y-2">
-                              <Badge variant="secondary" className="mr-2 mb-2">
-                                AI Image Generation
-                              </Badge>
-                              <Badge variant="secondary" className="mr-2 mb-2">
-                                Generative AI Tools
-                              </Badge>
-                              <Badge variant="secondary" className="mr-2 mb-2">
-                                Machine Learning
-                              </Badge>
-                              <Badge variant="secondary" className="mr-2 mb-2">
-                                Data Structures
-                              </Badge>
-                              <Badge variant="secondary" className="mr-2 mb-2">
-                                Algorithms
-                              </Badge>
-                            </div>
-                          </CardContent>
-                        </Card>
-
-                        <Card className="bg-gradient-to-br from-accent/5 to-secondary/5 border-0">
-                          <CardContent className="p-6">
-                            <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                              <Globe className="h-6 w-6 text-accent" />
-                            </div>
-                            <h3 className="text-lg font-heading font-bold mb-4">Additional Skills</h3>
-                            <div className="space-y-2">
-                              <Badge variant="secondary" className="mr-2 mb-2">
-                                Vibe Coding
-                              </Badge>
-                              <Badge variant="secondary" className="mr-2 mb-2">
-                                English Proficiency
-                              </Badge>
-                              <Badge variant="secondary" className="mr-2 mb-2">
-                                Technical Writing
-                              </Badge>
-                              <Badge variant="secondary" className="mr-2 mb-2">
-                                Problem Solving
-                              </Badge>
-                              <Badge variant="secondary" className="mr-2 mb-2">
-                                Team Collaboration
-                              </Badge>
-                            </div>
-                          </CardContent>
-                        </Card>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              {/* AI & Machine Learning */}
-              <Card className="border-border">
-                <CardHeader>
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mr-4">
-                      <Brain className="h-6 w-6 text-accent" />
-                    </div>
-                    <CardTitle className="font-heading">AI & Machine Learning</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div>
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="font-semibold">OpenAI API (ChatGPT)</span>
-                        <Badge variant="secondary">Expert</Badge>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="bg-accent h-2 rounded-full w-[90%]"></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="font-semibold">Google Gemini AI</span>
-                        <Badge variant="secondary">Advanced</Badge>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="bg-accent h-2 rounded-full w-[85%]"></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="font-semibold">TensorFlow/PyTorch</span>
-                        <Badge variant="secondary">Intermediate</Badge>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="bg-muted-foreground h-2 rounded-full w-[70%]"></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="font-semibold">Natural Language Processing</span>
-                        <Badge variant="secondary">Advanced</Badge>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="bg-accent h-2 rounded-full w-[80%]"></div>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+    {/* Programming Languages & Core Technologies */}
+    <div className="mb-16">
+      <h3 className="text-2xl font-heading font-semibold mb-8 text-center border-b border-muted pb-4 max-w-xl mx-auto">
+        Programming Languages & Core Technologies
+      </h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+        {/* Left Column */}
+        <div className="space-y-6">
+          {[
+            { name: "JavaScript", level: "Advanced", width: "90%", color: "bg-primary" },
+            { name: "React.js", level: "Advanced", width: "85%", color: "bg-primary" },
+            { name: "Node.js", level: "Advanced", width: "80%", color: "bg-accent" },
+            { name: "Python", level: "Intermediate", width: "75%", color: "bg-secondary" },
+          ].map(({ name, level, width, color }) => (
+            <div key={name}>
+              <div className="flex justify-between items-center mb-2">
+                <span className="font-medium text-lg">{name}</span>
+                <span className="text-sm text-muted-foreground">{level}</span>
+              </div>
+              <div className="w-full bg-muted rounded-full h-3">
+                <div className={`${color} h-3 rounded-full`} style={{ width }} />
+              </div>
             </div>
-
-            {/* Frameworks & Technologies Grid */}
-            <div className="grid md:grid-cols-3 gap-6">
-              {/* Frontend Frameworks */}
-              <Card className="border-border">
-                <CardHeader>
-                  <CardTitle className="font-heading text-lg">Frontend Frameworks</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-primary/10 text-primary border-primary/20">React</Badge>
-                    <Badge className="bg-primary/10 text-primary border-primary/20">Next.js</Badge>
-                    <Badge className="bg-primary/10 text-primary border-primary/20">Vue.js</Badge>
-                    <Badge className="bg-primary/10 text-primary border-primary/20">Svelte</Badge>
-                    <Badge className="bg-primary/10 text-primary border-primary/20">Angular</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Backend Frameworks */}
-              <Card className="border-border">
-                <CardHeader>
-                  <CardTitle className="font-heading text-lg">Backend Frameworks</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-accent/10 text-accent border-accent/20">Django</Badge>
-                    <Badge className="bg-accent/10 text-accent border-accent/20">FastAPI</Badge>
-                    <Badge className="bg-accent/10 text-accent border-accent/20">Node.js</Badge>
-                    <Badge className="bg-accent/10 text-accent border-accent/20">Express.js</Badge>
-                    <Badge className="bg-accent/10 text-accent border-accent/20">Flask</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Databases */}
-              <Card className="border-border">
-                <CardHeader>
-                  <CardTitle className="font-heading text-lg">Databases</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-secondary/10 text-secondary border-secondary/20">PostgreSQL</Badge>
-                    <Badge className="bg-secondary/10 text-secondary border-secondary/20">MongoDB</Badge>
-                    <Badge className="bg-secondary/10 text-secondary border-secondary/20">Redis</Badge>
-                    <Badge className="bg-secondary/10 text-secondary border-secondary/20">MySQL</Badge>
-                    <Badge className="bg-secondary/10 text-secondary border-secondary/20">SQLite</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Cloud & DevOps */}
-              <Card className="border-border">
-                <CardHeader>
-                  <CardTitle className="font-heading text-lg">Cloud & DevOps</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-primary/10 text-primary border-primary/20">AWS</Badge>
-                    <Badge className="bg-primary/10 text-primary border-primary/20">Docker</Badge>
-                    <Badge className="bg-primary/10 text-primary border-primary/20">Kubernetes</Badge>
-                    <Badge className="bg-primary/10 text-primary border-primary/20">Vercel</Badge>
-                    <Badge className="bg-primary/10 text-primary border-primary/20">GitHub Actions</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Tools & Others */}
-              <Card className="border-border">
-                <CardHeader>
-                  <CardTitle className="font-heading text-lg">Tools & Others</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-accent/10 text-accent border-accent/20">Git</Badge>
-                    <Badge className="bg-accent/10 text-accent border-accent/20">Webpack</Badge>
-                    <Badge className="bg-accent/10 text-accent border-accent/20">Jest</Badge>
-                    <Badge className="bg-accent/10 text-accent border-accent/20">Cypress</Badge>
-                    <Badge className="bg-accent/10 text-accent border-accent/20">Figma</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Certifications */}
-              <Card className="border-border">
-                <CardHeader>
-                  <div className="flex items-center">
-                    <Award className="h-5 w-5 text-accent mr-2" />
-                    <CardTitle className="font-heading text-lg">Certifications</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      <span>AWS Certified Developer</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      <span>Google Cloud Professional</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      <span>MongoDB Certified Developer</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+          ))}
         </div>
-      </section>
+
+        {/* Right Column */}
+        <div className="space-y-6">
+          {[
+            { name: "C++", level: "Advanced", width: "85%", color: "bg-primary" },
+            { name: "Java", level: "Intermediate", width: "70%", color: "bg-accent" },
+            { name: "TypeScript", level: "Intermediate", width: "75%", color: "bg-secondary" },
+            { name: "PHP", level: "Intermediate", width: "65%", color: "bg-primary" },
+          ].map(({ name, level, width, color }) => (
+            <div key={name}>
+              <div className="flex justify-between items-center mb-2">
+                <span className="font-medium text-lg">{name}</span>
+                <span className="text-sm text-muted-foreground">{level}</span>
+              </div>
+              <div className="w-full bg-muted rounded-full h-3">
+                <div className={`${color} h-3 rounded-full`} style={{ width }} />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    {/* Skill Cards Grid */}
+    <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
+      <Card className="bg-card/60 backdrop-blur rounded-lg border border-muted p-6 hover:shadow-lg transition-shadow duration-300">
+        <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+          <Code className="h-6 w-6 text-primary" />
+        </div>
+        <h3 className="text-xl font-heading font-semibold mb-4">Frontend Technologies</h3>
+        <div className="flex flex-wrap gap-3">
+          {["HTML5", "CSS3", "Bootstrap", "Next.js", "AngularJS", "UI/UX Design"].map((tech) => (
+            <Badge variant="secondary" key={tech} className="px-3 py-1 rounded-lg shadow-sm">{tech}</Badge>
+          ))}
+        </div>
+      </Card>
+
+      <Card className="bg-card/60 backdrop-blur rounded-lg border border-muted p-6 hover:shadow-lg transition-shadow duration-300">
+        <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
+          <Database className="h-6 w-6 text-accent" />
+        </div>
+        <h3 className="text-xl font-heading font-semibold mb-4">Backend & Database</h3>
+        <div className="flex flex-wrap gap-3">
+          {["Express.js", "MongoDB", "MySQL", "PostgreSQL", "REST API", "APIs"].map((tech) => (
+            <Badge variant="secondary" key={tech} className="px-3 py-1 rounded-lg shadow-sm">{tech}</Badge>
+          ))}
+        </div>
+      </Card>
+
+      <Card className="bg-card/60 backdrop-blur rounded-lg border border-muted p-6 hover:shadow-lg transition-shadow duration-300">
+        <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
+          <Cloud className="h-6 w-6 text-secondary" />
+        </div>
+        <h3 className="text-xl font-heading font-semibold mb-4">DevOps & Cloud</h3>
+        <div className="flex flex-wrap gap-3">
+          {["Git", "GitHub", "Docker", "AWS EC2", "Linux", "WordPress"].map((tech) => (
+            <Badge variant="secondary" key={tech} className="px-3 py-1 rounded-lg shadow-sm">{tech}</Badge>
+          ))}
+        </div>
+      </Card>
+    </div>
+  </div>
+</section>
 
       {/* Features Section - Now Skills Preview */}
       <section id="skills-preview" className="py-20 bg-background">
@@ -1069,93 +742,6 @@ export default function DeveloperPortfolio() {
                 <CardDescription>
                   Optimizing applications for speed and scalability using modern deployment and monitoring tools.
                 </CardDescription>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section - Now Client Testimonials */}
-      <section id="testimonials" className="py-20 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading font-black mb-4">Client Testimonials</h2>
-            <p className="text-xl text-muted-foreground">What clients say about working with me</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-border">
-              <CardContent className="pt-6">
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-accent text-accent" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  "Alex delivered an exceptional AI-powered customer service chatbot that reduced our response time by
-                  80%. His expertise in both Python and AI integration is outstanding."
-                </p>
-                <div className="flex items-center">
-                  <img
-                    src="/professional-woman-headshot.png"
-                    alt="Sarah Chen"
-                    className="w-10 h-10 rounded-full mr-3"
-                  />
-                  <div>
-                    <p className="font-semibold">Sarah Chen</p>
-                    <p className="text-sm text-muted-foreground">CEO, TechFlow Inc.</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border">
-              <CardContent className="pt-6">
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-accent text-accent" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  "The full-stack application Alex built for us handles thousands of users seamlessly. His JavaScript
-                  skills and attention to performance optimization are remarkable."
-                </p>
-                <div className="flex items-center">
-                  <img
-                    src="/professional-man-headshot.png"
-                    alt="Marcus Rodriguez"
-                    className="w-10 h-10 rounded-full mr-3"
-                  />
-                  <div>
-                    <p className="font-semibold">Marcus Rodriguez</p>
-                    <p className="text-sm text-muted-foreground">CTO, GrowthCorp</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border">
-              <CardContent className="pt-6">
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-accent text-accent" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  "Working with Alex was a game-changer. He integrated AI features that transformed our platform and
-                  provided excellent documentation and support throughout."
-                </p>
-                <div className="flex items-center">
-                  <img
-                    src="/professional-woman-headshot-business.png"
-                    alt="Emily Watson"
-                    className="w-10 h-10 rounded-full mr-3"
-                  />
-                  <div>
-                    <p className="font-semibold">Emily Watson</p>
-                    <p className="text-sm text-muted-foreground">Founder, InnovateLab</p>
-                  </div>
-                </div>
               </CardContent>
             </Card>
           </div>
@@ -1345,15 +931,15 @@ export default function DeveloperPortfolio() {
               <div className="pt-6">
                 <h4 className="font-semibold mb-4">Connect on Social</h4>
                 <div className="flex space-x-4">
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="sm" onClick={() => window.open('https://github.com/Aniketsonkerr', '_blank')}>
                     <Github className="h-4 w-4 mr-2" />
                     GitHub
                   </Button>
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="sm" onClick={() => window.open('https://www.linkedin.com/in/aniket-sonker-123456789/', '_blank')} >
                     <Linkedin className="h-4 w-4 mr-2" />
                     LinkedIn
                   </Button>
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="sm" onClick={() => window.location.href = 'mailto:aniketsonker@gmail.com'}>
                     <Mail className="h-4 w-4 mr-2" />
                     Email
                   </Button>
