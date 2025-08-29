@@ -300,7 +300,7 @@ export default function DeveloperPortfolio() {
                 <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
                   <ShoppingCart className="h-6 w-6 text-secondary" />
                 </div>
-                <h3 className="text-xl font-heading font-bold mb-3">ShoppyGlobal E-Commerce</h3>
+                <h3 className="text-xl font-heading font-bold mb-3">E-Commerce Project</h3>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   Full-stack e-commerce platform with React frontend and Node.js/Express.js backend, featuring MongoDB
                   integration, user authentication, and API endpoints.
@@ -326,7 +326,7 @@ export default function DeveloperPortfolio() {
                   </Button>
                   <Button size="sm" variant="ghost" asChild>
                     <a
-                      href="https://github.com/Aniketsonkerr/ShoppyGlobal.git"
+                      href="https://github.com/Aniketsonkerr/ecommerce"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -446,7 +446,7 @@ export default function DeveloperPortfolio() {
                 </div>
                 <div className="flex gap-3">
                   <Button size="sm" variant="outline" className="flex-1 bg-transparent" asChild>
-                    <a href="https://aniketsonkerr.github.io/myportfolio/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Aniketsonkerr/portfolio" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4 mr-2" />
                       View Demo
                     </a>
