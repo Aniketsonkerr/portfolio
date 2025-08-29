@@ -29,8 +29,23 @@ import {
   Globe,
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image";
+import profile from "@/public/profile.png"
 import { ContactForm } from "@/components/contact-form"
 import { PythonChatbot } from "@/components/python-chatbot"
+import React from "react";
+
+interface InfoItemProps {
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  text: string;
+}
+
+const InfoItem: React.FC<InfoItemProps> = ({ icon: Icon, text }) => (
+  <div className="flex items-center space-x-2">
+    <Icon className="h-5 w-5" />
+    <span>{text}</span>
+  </div>
+);
 
 const handleDownloadCV = () => {
   window.open("/api/download-cv", "_blank")
@@ -91,55 +106,44 @@ export default function DeveloperPortfolio() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-20 lg:py-32">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8">
-              <Badge variant="secondary" className="mb-4 text-sm px-4 py-2">
-                Full Stack Developer
-              </Badge>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-heading font-black mb-6 leading-tight">
-              Building the Future with
-              <span className="block text-accent"> AI-Powered Solutions</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 leading-relaxed">
-              Experienced Full Stack Developer specializing in Python and JavaScript, with expertise in AI integration.
-              I create innovative web applications that leverage cutting-edge AI technologies to solve real-world
-              problems.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-4" onClick={() => window.open("https://github.com/Aniketsonkerr", "_blank")}>
-                <Github className="h-5 w-5 mr-2" />
-                View My Work
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 py-4 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
-                onClick={handleDownloadCV}
-              >
-                <Download className="h-5 w-5 mr-2" />
-                Download CV
-              </Button>
-            </div>
-            <div className="flex justify-center space-x-6 text-primary-foreground/80">
-              <div className="flex items-center">
-                <Code className="h-5 w-5 mr-2" />
-                <span>1+ Years Experience</span>
-              </div>
-              <div className="flex items-center">
-                <Database className="h-5 w-5 mr-2" />
-                <span>10+ Projects Completed</span>
-              </div>
-              <div className="flex items-center">
-                <Brain className="h-5 w-5 mr-2" />
-                <span>AI Integration Expert</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section className="bg-primary/95 text-primary-foreground py-12 lg:py-24">
+  <div className="container flex flex-col lg:flex-row items-center gap-12 mx-auto px-4 sm:px-6 lg:px-12">
+    <div className="shrink-0 flex justify-center lg:justify-start">
+      <Image
+        src="/profile.png"
+        alt="Aniket Sonker Full Stack Developer"
+        width={240}
+        height={240}
+        className="rounded-full shadow-xl border-4 border-accent hover:scale-105 transition-transform duration-300"
+        priority
+      />
+    </div>
+    <div className="flex-1 text-center lg:text-left space-y-6">
+      <Badge variant="secondary" className="mb-4 text-base px-5 py-2 shadow">Full Stack Developer</Badge>
+      <h1 className="text-4xl md:text-6xl font-heading font-black leading-tight">
+        Building the Future with
+        <span className="block text-accent animate-pulse">AI-Powered Solutions</span>
+      </h1>
+      <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-2xl mx-auto lg:mx-0">
+        Experienced Full Stack Developer specializing in Python and JavaScript with strong AI integration skills. Creating innovative web applications using cutting-edge technologies.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-4">
+        <Button size="lg" variant="secondary" className="text-lg px-8 py-4 font-bold shadow">
+          <Github className="h-5 w-5 mr-2" />View My Work
+        </Button>
+        <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent">
+          <Download className="h-5 w-5 mr-2" />Download CV
+        </Button>
+      </div>
+      <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-primary-foreground/80">
+        <InfoItem icon={Code} text="1+ Years Experience" />
+        <InfoItem icon={Database} text="10+ Projects Completed" />
+        <InfoItem icon={Brain} text="AI Integration Expert" />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* About Section */}
       <section id="about" className="py-20 bg-background">
@@ -785,9 +789,11 @@ export default function DeveloperPortfolio() {
                     API Development
                   </li>
                 </ul>
+                <a href="#contact">
                 <Button className="w-full bg-transparent" variant="outline">
                   Get Quote
                 </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -826,7 +832,9 @@ export default function DeveloperPortfolio() {
                     Performance Optimization
                   </li>
                 </ul>
+                <a href="#contact">
                 <Button className="w-full">Get Started</Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -862,9 +870,11 @@ export default function DeveloperPortfolio() {
                     Best Practices Guide
                   </li>
                 </ul>
+                <a href="#contact">
                 <Button className="w-full bg-transparent" variant="outline">
                   Book Session
                 </Button>
+                </a>
               </CardContent>
             </Card>
           </div>
@@ -1029,18 +1039,17 @@ export default function DeveloperPortfolio() {
               <h3 className="text-2xl font-heading font-black mb-4">Aniket Sonker</h3>
               <p className="text-sidebar-foreground/80 mb-4">Full Stack Developer & MERN Stack Specialist</p>
               <div className="flex space-x-4">
-                <Link href="#" className="text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors">
+                <Link href="https://github.com/Aniketsonkerr" className="text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors">
                   <span className="sr-only">GitHub</span>
                   <Github className="h-6 w-6" />
                 </Link>
-                <Link href="#" className="text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors">
+                <Link href="https://www.linkedin.com/in/aniket-sonker-a6a654273/" className="text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors">
                   <span className="sr-only">LinkedIn</span>
                   <Linkedin className="h-6 w-6" />
                 </Link>
-                <Link href="#" className="text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors">
-                  <span className="sr-only">Email</span>
-                  <Mail className="h-6 w-6" />
-                </Link>
+                <Link href="mailto:aniketsonkerr@gmail.com" className="text-sidebar-foreground/60 hover:text-sidebar-foreground transition-colors" aria-label="Email">
+  <Mail className="h-6 w-6" />
+</Link>
               </div>
             </div>
 
